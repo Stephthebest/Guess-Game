@@ -13,8 +13,11 @@ html{
 
 main{
     background-color: black;
-    margin: 0 .5rem;
+    margin: auto;
+    padding: 1rem 1rem;
     border-radius: .3rem;
+    max-width: 600px;
+   min-height: 600px;
 }
 
 h1, h2, p, label, button ,li {
@@ -46,14 +49,17 @@ section, form{
 }
 
 header{
+    max-width: 600px;
+    max-height: 500px;
     padding: 1rem 1rem;
-    margin: 1.2rem .5rem;
+    margin: auto;
     margin-bottom: 2rem;
     border: 2px solid black;
     background-color: black;
     display: flex;
     flex-direction: column;
     border-radius: .3rem;
+    
 }
 
 h1{
