@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can you guess ?</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Guess &#191; </h1>
+        <p>Can you guess what the other person has written ?</p>
+        <button id="rules-btn">Rules</button>
+    </header>
+
+    <dialog id="dialog-rules">
+         <h2>Rules</h2>
+         <ol>
+            <li><p>Both players have to type in there names into the players box.</p></li>
+            <li><p>Then the questioner will set the numeric amount of attempts they will give there opponent.</p></li>
+            <li><p>The questioner will then type in a question into the desginated box for questions.</p></li>
+            <li><p>The opponent must try to answer the question in the amount of attempts the questioner has given them</p></li>
+            <li><p>If the opponent does not answer in the x amount of attempts the questioner gets a point.</p></li>
+            <li><p>First player to 3 wins.</p></li>
+            <li><p>Good Luck!</p></li>
+         </ol>
+         <button id="dialog-exit-btn">Exit</button>
+    </dialog>
+
+    <main id="playing-board">
+
+      <form id="players-inputs" class="players-inputs">
+        <label for="questioner">Questioner name</label>
+        <input type="text" name="questioner" id="questioner" required>
+        <label for="opponent">Opponent name</label>
+        <input type="text" name="opponent" id="opponent" required>
+        <label for="set-attempts">Set attempts per question</label>
+        <select name="set-attempts" id="set-attempts">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="5">Five</option>
+        </select>
+        <button  id="begin-button">Begin</button>
+      </form>
+
+<section id="questioner-ask" class=" questioner-ask hidden">
+    <label for="question">Enter question:</label>
+    <textarea id="question" name="question" cols="33" rows="5" placeholder="Enter your text here.." required></textarea>
+    <label for="questioner-answer">Answer</label>
+    <textarea  name="questioner-answer" id="questioner-answer" rows="3" cols="30" placeholder="Enter answer here..." required></textarea>
+    <button id="question-submit">Submit question</button>
+</section>
+
+      <section id="question-display" class="question-display hidden">
+       <p>The question is :</p>
+       <p id="question-display-box"></p>
+       <label for="answer-box">Enter answer here</label>
+       <textarea type="text" id="answer-box" name="answer-box" placeholder="Enter answer here..." required></textarea>
+       <button id="guesser-submit-btn">Submit</button>
+      </section>
+
+      <section id="score-board" class="score-board hidden">
+        
+        <p id="questioner-score">Questioner</p>
+        <p id="attempts-count">Attempts</p>
+        <p id="opponent-score">Guesser</p>
+      </section>
+
+      <button id="next-round-btn" class="next-round-btn hidden">Next round</button>
+      <button type="submit" id="reset-game-btn" class="reset-game-btn hidden">Reset Game</button>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>

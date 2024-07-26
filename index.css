@@ -1,0 +1,173 @@
+ *, ::before, ::after{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100vw;
+    font-family: "Permanent Marker", cursive;
+    background-color: antiquewhite;
+}
+
+main{
+    background-color: black;
+    margin: 0 .5rem;
+    border-radius: .3rem;
+}
+
+h1, h2, p, label, button ,li {
+    color: antiquewhite;
+    text-shadow: 0 3px 10px ;
+}
+
+label, input {
+    display: block;
+}
+
+
+textarea{
+    background-color: antiquewhite;
+    font-weight: 600;
+}
+
+
+
+button {
+    font-family: "Permanent Marker", cursive;
+    border: 2px solid antiquewhite;
+    background-color: black;
+}
+
+section, form{
+    margin: 1rem 0;
+    text-align: center;
+}
+
+header{
+    padding: 1rem 1rem;
+    margin: 1.2rem .5rem;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: .3rem;
+}
+
+h1{
+    text-align: center;
+    background:linear-gradient(45deg,rgb(13, 10, 10) 20%,rgb(1, 1, 1)) ;
+    padding: .5rem 0;
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+header > p {
+   font-size: .8rem;
+   font-weight: 400;
+   padding: .5rem 0;
+   text-align: center;
+   font-size: 1.2rem;
+   text-shadow:0 3px 7px ;
+}
+
+#rules-btn{
+ align-self: center;
+ border:3px solid antiquewhite;
+ border-radius: 1rem;
+ background-color: black;
+ font-weight: 600;
+ font-size: 1.5rem;
+ padding: .5rem 1.8rem;
+} 
+
+/*  dialog  */
+
+#dialog-rules{
+    background: black;
+    padding: .4rem 1.8rem;
+    color: white;
+}
+
+#dialog-exit-btn {
+    margin: .5rem 0;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: .1rem 1.8rem;
+    border: 2px solid antiquewhite;
+    background-color: black;
+}
+
+/* playing board  */
+
+#playing-board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#begin-button{
+    margin-top: .5rem;
+    width: 6rem;
+}
+
+/* Player inputs */
+
+.players-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/* questioner ask */
+
+.questioner-ask{
+display: flex;
+flex-direction: column;
+}
+
+#question-submit{
+    margin-top: 1rem;
+}
+
+
+/* question display */
+
+.question-display {
+    display: flex;
+    flex-direction: column;
+}
+
+#opponent-submit-btn{
+margin-top: .8rem;
+}
+
+
+
+/* ScoreBoard */
+
+.score-board > p {
+    font-size: 1.3rem;
+} 
+
+
+/*  classes added with javascript */
+
+#player-names{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.players{
+    font-size: .9rem;
+}
+
+.hidden{
+    display: none;
+} 
